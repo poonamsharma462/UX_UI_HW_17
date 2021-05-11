@@ -1,17 +1,48 @@
-*{
+ul {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: #666;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+	background-color: #ddd;
+  }
+  
+  li a.active {
+	color: white;
+	background-color: #4CAF50;
+  }
+
+  .section{
+	height: 600px;padding:25px ;  align-content: center;
+  }
+  
+.contentDiv{
+	padding: 60px; border-color: ivory; border-width: medium; background-color: lightgray; 
 }
-html,body{
-	width:100%;
-	height:100%;
-	font-size: 14px;
-	font-weight: normal;
-}
-.background{
-	background-image: url(../imagehttps://static.dezeen.com/uploads/2019/06/Samsung-Mobile-Design-Competition-2019_dezeen_02.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	overflow-y: auto;
-}
+
+  .footer {
+	 position: fixed;
+	 left: 0;
+	 bottom: 0;
+	 width: 100%;
+	 background-color: pink;
+	 color: white;
+	 text-align: center;
+	 padding-right: 20px; padding-left: 20px;
+  }
